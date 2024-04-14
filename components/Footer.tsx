@@ -19,6 +19,10 @@ export const Footer = () => {
             All rights reserved &copy; by fereshteh
           </p>
         </div>
+
+        <div className="footer__links">
+          
+        </div>
       </div>
     </footer>
   );
