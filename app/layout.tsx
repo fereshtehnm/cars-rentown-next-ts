@@ -1,28 +1,23 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Navbar, Footer } from "@/components";
 import "./globals.css";
 
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Car hub",
-  description: "Discover the best cars",
+import { Navbar, Footer } from "@/components";
+export const metadata = {
+  title: "Car Hub",
+  description: "Discover world's best car showcase application",
 };
 
 export default function RootLayout({
   children,
-}:{
-  children: React.ReactNode
+}: {
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
+      <body className="relative">
+        <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
