@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: "export",
 
   // Add basePath
   basePath: "/cars-rentown-next-ts",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
