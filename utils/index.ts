@@ -2,7 +2,7 @@ export async function fetchCars() {
   const headers = { "X-Api-Key": "Gs3QcQVnwj3hRwvZYmDZJw==Ve59DtbxD1XcbuV2" };
   const contentType = "application/json";
 
-  const response = await fetch("https://api.api-ninjas.com/v1/cars", {
+  const response = await fetch("https://api.api-ninjas.com/v1/cars?model=camry", {
     headers: headers,
   });
 
