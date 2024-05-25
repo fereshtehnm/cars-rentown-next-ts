@@ -19,7 +19,7 @@ export default async function Home() {
         <div className="home__filters">
           <SearchBar />
           <div className="home__filter-container">
-            <CustomFilter title="fuel" />
+            <CustomFilter title="model" />
             <CustomFilter title="year" />
           </div>
         </div>
